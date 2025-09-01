@@ -8,42 +8,28 @@
 using namespace std;
 
 class Solution {
-private:
-    bool isPrime(int n) {
-        if (n <= 1) {
-            return false;
-        }
-        int k = sqrt(n);
-        for (int i = 2; i <= k; i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
 
-    int getFirstPrimeFactor(int n) {
-        int k = sqrt(n);
-        for (int i = 2; i <= k; i++) {
-            if (isPrime(i) && n % i == 0) {
-                return i;
-            }
-        }
-        // never happen
-        return n;
-    }
 public:
     bool isUgly(int n) {
-        if (n <= 0 || (isPrime(n) && n > 5)) {
+        if (n <= 0) {
             return false;
         }
+        bool flag = true;
         while (n > 1) {
-            int p = getFirstPrimeFactor(n);
-            if (p > 5) {
-                return false;
+            flag = false;
+            if (n % 2 == 0) {
+                n /= 2;
+                flag = true;
             }
-            n /= p;
-            if (isPrime(n) && n > 5) {
+            if (n % 3 == 0) {
+                n /= 3;
+                flag = true;
+            }
+            if (n % 5 == 0) {
+                n /= 5;
+                flag = true;
+            }
+            if (!flag) {
                 return false;
             }
         }
