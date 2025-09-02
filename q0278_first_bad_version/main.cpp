@@ -11,12 +11,6 @@ using namespace std;
 bool isBadVersion(int version);
 
 class Solution {
-private:
-    bool hit(int n) {
-        return !isBadVersion(n - 1) &&
-               ((n == INT_MAX) || isBadVersion(n + 1));
-    }
-
 public:
     int firstBadVersion(int n) {
         int left = 0;
@@ -26,8 +20,8 @@ public:
             int versionVal = mid + 1;
             if (!isBadVersion(versionVal)) {
                 left = mid + 1;
-            } else if (hit(versionVal)) {
-                return versionVal;
+            } else if (!isBadVersion(versionVal - 1)) {
+                return mid + 1;
             } else {
                 right = mid - 1;
             }
