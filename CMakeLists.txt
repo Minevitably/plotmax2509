@@ -10,4 +10,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0283_move_zeroes)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0290_word_pattern)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0292_nim_game)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0303_range_sum_query_immutable)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0326_power_of_three)
 
