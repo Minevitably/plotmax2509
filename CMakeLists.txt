@@ -13,4 +13,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0303_range_sum_query_immutable)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0326_power_of_three)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0338_counting_bits)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0342_power_of_four)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0344_reverse_string)
 
