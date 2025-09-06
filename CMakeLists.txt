@@ -14,4 +14,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0326_power_of_three)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0338_counting_bits)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0342_power_of_four)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0344_reverse_string)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0345_reverse_vowels_of_a_string)
 
