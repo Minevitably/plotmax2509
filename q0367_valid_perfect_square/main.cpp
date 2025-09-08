@@ -9,19 +9,23 @@
 using namespace std;
 
 class Solution {
-private:
-    int nums[46340];
-public:
-    Solution() {
-        for (int i = 0; i < 46340; i++) {
-            nums[i] = (i + 1) * (i + 1);
-        }
-    }
 public:
     bool isPerfectSquare(int num) {
-        for (int i = 0; i < 46340; i++) {
-            if (nums[i] == num) {
+        int left = 1;
+        int right = num;
+        while (left <= right) {
+            int mid = right - (right - left) / 2;
+            if (mid > 46340) {
+                right = mid - 1;
+                continue;
+            }
+            int current = mid * mid;
+            if (current == num) {
                 return true;
+            } else if (current < num) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
         return false;
