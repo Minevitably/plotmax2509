@@ -9,17 +9,18 @@
 using namespace std;
 
 class Solution {
+private:
+    int nums[46340];
+public:
+    Solution() {
+        for (int i = 0; i < 46340; i++) {
+            nums[i] = (i + 1) * (i + 1);
+        }
+    }
 public:
     bool isPerfectSquare(int num) {
-        if (num == 1 || num == 4) {
-            return true;
-        }
-        if (num < 4) {
-            return false;
-        }
-        int half = num / 2;
-        for (int i = 1; i < half && i < 46341; i++) {
-            if (i * i == num) {
+        for (int i = 0; i < 46340; i++) {
+            if (nums[i] == num) {
                 return true;
             }
         }
