@@ -12,13 +12,9 @@ class Solution {
 public:
     bool isPerfectSquare(int num) {
         int left = 1;
-        int right = num;
+        int right = 46340;
         while (left <= right) {
             int mid = right - (right - left) / 2;
-            if (mid > 46340) {
-                right = mid - 1;
-                continue;
-            }
             int current = mid * mid;
             if (current == num) {
                 return true;
