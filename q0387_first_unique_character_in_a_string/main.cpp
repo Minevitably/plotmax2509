@@ -9,6 +9,7 @@
 using namespace std;
 
 class Solution {
+//    q0387_first_unique_character_in_a_string
 private:
     bool isRepeat(int index, const string &s) {
         for (int i = 0; i < s.size(); i++) {
@@ -32,32 +33,7 @@ public:
     }
 };
 
-
-class Solution {
-public:
-    bool canConstruct(string ransomNote, string magazine) {
-        map<char, int> magaMap;
-        for (int i = 0; i < magazine.size(); i++) {
-            if (magaMap.count(magazine[i]) == 0) {
-                magaMap[magazine[i]] = 0;
-            }
-            magaMap[magazine[i]] += 1;
-        }
-
-        for (int i = 0; i < ransomNote.size(); i++) {
-            if (magaMap.count(ransomNote[i]) > 0 &&
-            magaMap[ransomNote[i]] > 0) {
-                magaMap[ransomNote[i]] -= 1;
-            } else {
-                return false;
-            }
-        }
-        return true;
-    }
-};
-
 int main() {
-    (new Solution())->canConstruct("aa", "ab");
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
