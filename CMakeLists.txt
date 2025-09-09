@@ -19,4 +19,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0349_intersection_of_two_arrays)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0350_intersection_of_two_arrays_II)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0367_valid_perfect_square)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0374_guess_number_higher_or_lower)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0383_ransom_note)
 
