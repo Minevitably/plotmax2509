@@ -11,20 +11,14 @@ using namespace std;
 class Solution {
 public:
     char findTheDifference(string s, string t) {
-        map<char, int> sMap;
-        map<char, int> tMap;
-        for (auto ch: s) {
-            sMap[ch] += 1;
+        char ch = 0;
+        for (char sc: s) {
+            ch ^= sc;
         }
-        for (auto ch: t) {
-            tMap[ch] += 1;
+        for (char tc: t) {
+            ch ^= tc;
         }
-        for (auto item: tMap) {
-            if (tMap[item.first] - sMap[item.first] != 0) {
-                return item.first;
-            }
-        }
-        return '0';
+        return ch;
     }
 };
 int main() {
