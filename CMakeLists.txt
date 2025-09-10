@@ -21,4 +21,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0367_valid_perfect_square)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0374_guess_number_higher_or_lower)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0383_ransom_note)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0387_first_unique_character_in_a_string)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0389_find_the_difference)
 
