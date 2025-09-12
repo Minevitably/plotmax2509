@@ -29,12 +29,11 @@ private:
         return oss.str();
     }
 
-    void rank(vector<string> &res, int turnedOn, bool lights[], int start) {
+    void rank(set<string> &res, int turnedOn, bool lights[], int start) {
         if (turnedOn == 0) {
             string str = lightsToStr(lights);
-            if (!str.empty() &&
-                std::find(res.begin(), res.end(), str) == res.end()) {
-                res.push_back(str);
+            if (!str.empty()) {
+                res.insert(str);
             }
         }
         for (int i = start; i < 10; i++) {
@@ -49,10 +48,10 @@ private:
 
 public:
     vector<string> readBinaryWatch(int turnedOn) {
-        vector<string> res;
+        set<string> resSet;
         bool lights[10] = {};
-        rank(res, turnedOn, lights, 0);
-        std::sort(res.begin(), res.end());
+        rank(resSet, turnedOn, lights, 0);
+        vector<string> res(resSet.begin(), resSet.end());
         return res;
     }
 };
