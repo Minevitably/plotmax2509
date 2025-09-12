@@ -23,4 +23,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0383_ransom_note)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0387_first_unique_character_in_a_string)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0389_find_the_difference)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0392_is_subsequence)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0401_binary_watch)
 
