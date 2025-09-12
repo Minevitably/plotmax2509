@@ -23,13 +23,13 @@ public:
     string toHex(int num) {
         string res;
         for (int i = 0; i < 8; i++) {
-            char ch = highFourBitsToHexStr(num << (i * 4));
-            if (res.empty() && ch == '0' && i != 7) {
-                continue;
-            }
-            res += ch;
+            res += highFourBitsToHexStr(num << (i * 4));
         }
-        return res;
+        int p;
+        for (p = 0; p < res.size() - 1 && res[p] == '0'; p++) {
+            ;
+        }
+        return res.substr(p, res.size() - p);
     }
 };
 
