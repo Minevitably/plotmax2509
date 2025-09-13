@@ -27,4 +27,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0401_binary_watch)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0404_sum_of_left_leaves)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0405_convert_a_number_to_hexadecimal)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0409_longest_palindrome)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0412_fizz_buzz)
 
