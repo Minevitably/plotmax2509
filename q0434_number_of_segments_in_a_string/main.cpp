@@ -13,15 +13,16 @@ public:
     int countSegments(string s) {
         vector<string> tokens;
         char delimiter = ' ';
-        stringstream ss(s);
-        string token;
-        while (getline(ss, token, delimiter)) {
-            if (token.empty()) {
-                continue;
+        int count = 0;
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] != delimiter) {
+                count++;
             }
-            tokens.emplace_back(token);
+            while (i < s.size() && s[i] != delimiter) {
+                i++;
+            }
         }
-        return tokens.size();
+        return count;
     }
 };
 
