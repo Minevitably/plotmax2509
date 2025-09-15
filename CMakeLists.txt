@@ -31,4 +31,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0412_fizz_buzz)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0414_third_maximum_number)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0415_add_strings)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0434_number_of_segments_in_a_string)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0441_arranging_coins)
 
