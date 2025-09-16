@@ -33,4 +33,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0415_add_strings)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0434_number_of_segments_in_a_string)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0441_arranging_coins)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0448_find_all_numbers_disappeared_in_an_array)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0455_assign_cookies)
 
