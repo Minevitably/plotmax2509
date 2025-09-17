@@ -36,4 +36,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0448_find_all_numbers_disappeared_in_an_
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0455_assign_cookies)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0459_repeated_substring_pattern)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0461_hamming_distance)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0463_island_perimeter)
 
