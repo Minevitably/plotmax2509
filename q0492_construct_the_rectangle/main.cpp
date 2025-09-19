@@ -13,33 +13,22 @@ using namespace std;
 class Solution {
 public:
     vector<int> constructRectangle(int area) {
-        vector<vector<int>> lwVec;
+        vector<int> min = {INT_MAX, 0};
         int n = sqrt(area);
         for (int i = 1; i <= n; i++) {
             if (area % i == 0) {
-                vector<int> vec;
-                int p = area / i;
-                if (p >= i) {
-                    vec.emplace_back(p);
-                    vec.emplace_back(i);
-                } else {
-                    vec.emplace_back(i);
-                    vec.emplace_back(p);
+                int length = i;
+                int width = area / i;
+                if (length < width) {
+                    swap(length, width);
                 }
-                lwVec.emplace_back(vec);
+                if (length - width < min[0] - min[1]) {
+                    min[0] = length;
+                    min[1] = width;
+                }
             }
         }
-
-        int min = INT_MAX;
-        int j = 0;
-        for (int i = 0; i < lwVec.size(); i++) {
-            int current = lwVec[i][0] - lwVec[i][1];
-            if (current < min) {
-                min = current;
-                j = i;
-            }
-        }
-        return lwVec[j];
+        return min;
     }
 };
 
