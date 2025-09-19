@@ -40,4 +40,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0463_island_perimeter)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0476_number_complement)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0482_license_key_formatting)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0485_max_consecutive_ones)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0492_construct_the_rectangle)
 
