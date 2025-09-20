@@ -41,4 +41,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0476_number_complement)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0482_license_key_formatting)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0485_max_consecutive_ones)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0492_construct_the_rectangle)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0495_teemo_attacking)
 
