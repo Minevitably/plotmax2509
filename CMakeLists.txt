@@ -48,4 +48,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0501_find_mode_in_binary_search_tree)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0504_base_7)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0506_relative_ranks)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0507_perfect_number)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0509_fibonacci_number)
 
