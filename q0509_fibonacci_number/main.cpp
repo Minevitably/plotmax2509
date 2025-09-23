@@ -12,10 +12,19 @@ using namespace std;
 class Solution {
 public:
     int fib(int n) {
+        // 0 1 1
         if (n == 0 || n == 1) {
             return n;
         }
-        return fib(n - 1) + fib(n - 2);
+        int fn = 0;
+        int f1 = 1;
+        int f2 = 0;
+        for (int i = 0; i < n - 1; i++) {
+            fn = f1 + f2;
+            f2 = f1;
+            f1 = fn;
+        }
+        return fn;
     }
 };
 
