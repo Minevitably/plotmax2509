@@ -17,9 +17,7 @@ private:
         if (n <= 3) {
             return medals[n - 1];
         } else {
-            ostringstream oss;
-            oss << n;
-            return oss.str();
+            return to_string(n);
         }
     }
 public:
