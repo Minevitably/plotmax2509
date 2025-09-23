@@ -12,23 +12,20 @@ using namespace std;
 class Solution {
 public:
     bool checkPerfectNumber(int num) {
-        vector<int> positiveDivisors;
+        int sum = 0;
         int end = sqrt(num);
         for (int i = 1; i <= end; i++) {
             if (num % i == 0) {
                 int d = num / i;
                 if (num != d) {
-                    positiveDivisors.emplace_back(d);
+                    sum += d;
                 }
                 if (num != i) {
-                    positiveDivisors.emplace_back(i);
+                    sum += i;
                 }
             }
         }
-        for (int positiveDivisor : positiveDivisors) {
-            num -= positiveDivisor;
-        }
-        return num == 0;
+        return num == sum;
     }
 };
 
