@@ -50,4 +50,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0506_relative_ranks)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0507_perfect_number)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0509_fibonacci_number)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0520_detect_capital)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0521_longest_uncommon_subsequence_I)
 
