@@ -51,4 +51,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0507_perfect_number)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0509_fibonacci_number)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0520_detect_capital)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0521_longest_uncommon_subsequence_I)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0530_minimum_absolute_difference_in_bST)
 
