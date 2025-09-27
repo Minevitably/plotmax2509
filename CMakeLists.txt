@@ -55,4 +55,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0530_minimum_absolute_difference_in_bST)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0541_reverse_string_II)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0543_diameter_of_binary_tree)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0551_student_attendance_record_I)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0557_reverse_words_in_a_string_III)
 
