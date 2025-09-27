@@ -9,18 +9,29 @@
 using namespace std;
 
 class Solution {
+private:
+    void reverse(string &s, int start, int count) {
+        if (start + count > s.size()) {
+            count = s.size() - start;
+        }
+        for (int i = 0; i < count / 2; i++) {
+            int left = start + i;
+            int right = start + count - i - 1;
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+        }
+    }
 public:
     string reverseWords(string s) {
-        string res;
-        stringstream ss(s);
-        string str;
-        while (getline(ss, str, ' ')) {
-            std::reverse(str.begin(), str.end());
-            res += str;
-            res += ' ';
+        for (int i = 0; i < s.size(); i++) {
+            int start = i;
+            while (i < s.size() && s[i] != ' ') {
+                i++;
+            }
+            reverse(s, start, i - start);
         }
-        res.pop_back();
-        return res;
+        return s;
     }
 };
 
