@@ -58,4 +58,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0551_student_attendance_record_I)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0557_reverse_words_in_a_string_III)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0559_maximum_depth_of_n-ary_tree)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0561_array_partition)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0563_binary_tree_tilt)
 
