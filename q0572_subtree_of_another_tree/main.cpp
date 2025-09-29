@@ -24,25 +24,27 @@ struct TreeNode {
 
 class Solution {
 private:
-    bool isSameTree(TreeNode* root1, TreeNode* root2) {
+    bool isSameTree(TreeNode *root1, TreeNode *root2) {
         if (root1 == nullptr || root2 == nullptr) {
             return root1 == root2;
         }
-        bool l = isSameTree(root1->left, root2->left);
-        bool r = isSameTree(root1->right, root2->right);
-        return (root1->val == root2->val) && l && r;
+        if (root1->val != root2->val) {
+            return false;
+        }
+        return isSameTree(root1->left, root2->left) &&
+               isSameTree(root1->right, root2->right);
     }
+
 public:
-    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+    bool isSubtree(TreeNode *root, TreeNode *subRoot) {
         if (root == nullptr) {
             return subRoot == nullptr;
         }
         if (isSameTree(root, subRoot)) {
             return true;
         }
-        bool l = isSubtree(root->left, subRoot);
-        bool r = isSubtree(root->right, subRoot);
-        return l || r;
+        return isSubtree(root->left, subRoot) ||
+               isSubtree(root->right, subRoot);
     }
 };
 
