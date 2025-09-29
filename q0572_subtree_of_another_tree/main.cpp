@@ -25,11 +25,8 @@ struct TreeNode {
 class Solution {
 private:
     bool isSameTree(TreeNode* root1, TreeNode* root2) {
-        if (root1 == nullptr && root2 == nullptr) {
-            return true;
-        }
-        if (root1 == nullptr ^ root2 == nullptr) {
-            return false;
+        if (root1 == nullptr || root2 == nullptr) {
+            return root1 == root2;
         }
         bool l = isSameTree(root1->left, root2->left);
         bool r = isSameTree(root1->right, root2->right);
@@ -40,10 +37,12 @@ public:
         if (root == nullptr) {
             return subRoot == nullptr;
         }
-        bool m = isSameTree(root, subRoot);
+        if (isSameTree(root, subRoot)) {
+            return true;
+        }
         bool l = isSubtree(root->left, subRoot);
         bool r = isSubtree(root->right, subRoot);
-        return m || l || r;
+        return l || r;
     }
 };
 
