@@ -17,17 +17,15 @@ public:
             return mat;
         }
 
-        vector<vector<int>> res;
+        vector<vector<int>> res(r, vector<int>(c));
         // i1 * n + j1 == i2 * c + j2
         for (int i = 0; i < r; i++) {
-            vector<int> row;
             for (int j = 0; j < c; j++) {
                 int k = i * c + j;
                 int i1 = k / n;
                 int j1 = k % n;
-                row.emplace_back(mat[i1][j1]);
+                res[i][j] = mat[i1][j1];
             }
-            res.emplace_back(row);
         }
         return res;
     }
