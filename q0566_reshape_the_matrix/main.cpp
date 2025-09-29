@@ -18,14 +18,8 @@ public:
         }
 
         vector<vector<int>> res(r, vector<int>(c));
-        // i1 * n + j1 == i2 * c + j2
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                int k = i * c + j;
-                int i1 = k / n;
-                int j1 = k % n;
-                res[i][j] = mat[i1][j1];
-            }
+        for (int k = 0; k < r * c; k++) {
+            res[k / c][k % c] = mat[k / n][k % n];
         }
         return res;
     }
