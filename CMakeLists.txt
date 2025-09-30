@@ -61,4 +61,5 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/q0561_array_partition)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0563_binary_tree_tilt)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0566_reshape_the_matrix)
 add_subdirectory(${PROJECT_SOURCE_DIR}/q0572_subtree_of_another_tree)
+add_subdirectory(${PROJECT_SOURCE_DIR}/q0575_distribute_candies)
 
